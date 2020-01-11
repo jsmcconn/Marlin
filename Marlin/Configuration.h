@@ -476,9 +476,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Genius
-  #define DEFAULT_Kp 9.31
-  #define DEFAULT_Ki 0.57
-  #define DEFAULT_Kd 37.76
+  #define DEFAULT_Kp 10.29
+  #define DEFAULT_Ki 0.70
+  #define DEFAULT_Kd 37.94
 
 #endif // PIDTEMP
 
@@ -516,9 +516,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // Genius
-  #define DEFAULT_bedKp 92.46
-  #define DEFAULT_bedKi 16.12
-  #define DEFAULT_bedKd 132.55
+  #define DEFAULT_bedKp 22.35
+  #define DEFAULT_bedKi 2.78
+  #define DEFAULT_bedKd 119.62
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
