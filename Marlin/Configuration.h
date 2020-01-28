@@ -476,9 +476,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Genius
-  #define DEFAULT_Kp 11.18
-  #define DEFAULT_Ki 0.85
-  #define DEFAULT_Kd 36.62
+  #define DEFAULT_Kp 12.0
+  #define DEFAULT_Ki 0.70
+  #define DEFAULT_Kd 41.50
 
 #endif // PIDTEMP
 
@@ -516,9 +516,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // Genius
-  #define DEFAULT_bedKp 14.34
-  #define DEFAULT_bedKi 2.73
-  #define DEFAULT_bedKd 50.12
+  #define DEFAULT_bedKp 22.42
+  #define DEFAULT_bedKi 2.98
+  #define DEFAULT_bedKd 112.66
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1200,7 +1200,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 3
+  #define GRID_MAX_POINTS_X 6
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
@@ -1305,7 +1305,7 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing when homing all axes (G28).
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-//#define Z_SAFE_HOMING
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axes (G28).
