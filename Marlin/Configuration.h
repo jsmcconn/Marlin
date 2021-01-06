@@ -423,7 +423,9 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
+#define TEMP_SENSOR_BED 1
 #define TEMP_SENSOR_PROBE 0
+#define TEMP_SENSOR_CHAMBER 1
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
@@ -497,9 +499,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  13.00
-    #define DEFAULT_Ki   0.70
-    #define DEFAULT_Kd  60.00
+    #define DEFAULT_Kp  10.17
+    #define DEFAULT_Ki   0.66
+    #define DEFAULT_Kd  38.95
   #endif
 #endif // PIDTEMP
 
@@ -538,9 +540,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 22.42
-  #define DEFAULT_bedKi 2.98
-  #define DEFAULT_bedKd 112.66
+  #define DEFAULT_bedKp 24.28
+  #define DEFAULT_bedKi 3.09
+  #define DEFAULT_bedKd 127.28
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
