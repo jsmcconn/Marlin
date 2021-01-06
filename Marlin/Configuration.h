@@ -476,9 +476,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Genius
-  #define DEFAULT_Kp 12.0
-  #define DEFAULT_Ki 0.80
-  #define DEFAULT_Kd 41.50
+  #define DEFAULT_Kp 13.0
+  #define DEFAULT_Ki 0.70
+  #define DEFAULT_Kd 60.00
 
 #endif // PIDTEMP
 
@@ -910,7 +910,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 28, -33, -0.9 }
+#define NOZZLE_TO_PROBE_OFFSET { 28, -33, -0.6 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1200,7 +1200,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 6
+  #define GRID_MAX_POINTS_X 2
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
