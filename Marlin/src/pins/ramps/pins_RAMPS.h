@@ -90,7 +90,7 @@
     #define X_MIN_PIN                          3
   #endif
   #ifndef X_MAX_PIN
-    #define X_MAX_PIN                          2
+    #define X_MAX_PIN                          4 // set to unused for chamber heater
   #endif
 #endif
 #ifndef Y_STOP_PIN
